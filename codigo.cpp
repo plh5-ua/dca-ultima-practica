@@ -366,7 +366,7 @@ void showMenu(){
        << "3- Special" << endl 
        << "4- Report" << endl
        << "q- Quit" << endl
-       << "Option: ";
+       << "Select Option: ";
 }
 
 char selectOption(){
