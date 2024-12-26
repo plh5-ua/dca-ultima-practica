@@ -1,4 +1,5 @@
 // DNI 51775490Y, PABLO LECOCQ HERNANDIS
+// Texto irrelevante aqui
 
 #include <iostream>
 #include <cstdlib> // Para rand(), srand() y atoi()
