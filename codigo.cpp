@@ -400,7 +400,8 @@ char selectOption(){
 // Esta es la función principal del programa
 int main(int argc,char *argv[]){
   if(argc!=2){ // Si los parámetros no son correctos, el programa termina inmediatamente
-    cout << "Usage: " << argv[0] << " <seed>" << endl;
+    cout << "Por favor aniade un parametro a la ejecucion, un int para la seed" << endl;
+	//cout << "Usage: " << argv[0] << " <seed>" << endl;
   }
   else{
     srand(atoi(argv[1])); // Introducimos la semilla para generar números aleatorios

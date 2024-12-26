@@ -41,3 +41,11 @@ Date:   Thu Dec 26 16:24:46 2024 +0100
 
     Signed-off-by: plh5-ua <plh5@alu.ua.es>
 
+- Tercera prueba:
+$ git commit -m "Prueba firma duplicada:
+>
+> Signed-off-by: plh5-ua <plh5@alu.ua.es>
+> Signed-off-by: plh5-ua <plh5@alu.ua.es>"
+Duplicate Signed-off-by lines.
+
+Confirmamos que el hook commit-msg funciona perfectamente.
