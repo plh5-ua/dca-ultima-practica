@@ -24,3 +24,20 @@ Date:   Thu Dec 26 16:20:31 2024 +0100
     Signed-off-by: plh5-ua <plh5@alu.ua.es>
 
 Además hemos usado el alias local 'last' para sacar el último commit.
+- Segunda prueba:
+$ git commit -m "Prueba con la firma correcta.
+>
+> Signed-off-by: plh5-ua <plh5@alu.ua.es>"
+[rama-remota-1 39a3fd5] Prueba con la firma correcta.
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+pablo@DePodador MINGW64 ~/Desktop/Universdidad/DCA/dca-ultima-practica (rama-remota-1)
+$ git last
+commit 39a3fd50f6ac6c1dd939685ae9b017bffd3e8240 (HEAD -> rama-remota-1)
+Author: plh5-ua <plh5@alu.ua.es>
+Date:   Thu Dec 26 16:24:46 2024 +0100
+
+    Prueba con la firma correcta.
+
+    Signed-off-by: plh5-ua <plh5@alu.ua.es>
+
