@@ -95,7 +95,7 @@ void asignStats(Hero &hero){
 		getline(cin, attackTotal, '/');
 		att = stoi(attackTotal);
 		getline(cin, defenseTotal);
-		def = stoi(defenseTotal)
+		def = stoi(defenseTotal);
 		
 		// La suma de ataque y defensa tiene que ser 100
 		if(att + def != 100 || (att <= 0) || (def <= 0)){
