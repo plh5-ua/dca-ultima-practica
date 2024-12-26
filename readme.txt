@@ -11,3 +11,16 @@ Funcionamiento de git bisect:
 - Con el hash copiado, hacemos: git bisect good <hash> , de esta forma marcamos el commit bueno.
 - Ahora git irá alternando entre versiones entre el commit bad y el good e iremos verificando el código para ver si el fallo está o no. Conforme verifiquemos, escribiremos en el terminal: git bisect good / git bisect bad , en función de si esa rama temporal (la rama con el commit) tiene o no el fallo.
 - En nuestro caso, primero ha elegido el commit 3, donde sí estaba el fallo. Hemos escrito git bisect bad, y nos ha mandado al commit 2, que es donde hemos introducido el fallo. Hemos vuelto a escribir git bisect bad y como no quedan mas commits entre este y el que hemos elegido como good bisect, ha determinado que el segundo commit es el que ha introducido el fallo. De esta forma hemos logrado identificar el commit que ha introducido el fallo usando git bisect.
+
+hooks:
+- Hemos activado el hook commit-msg quitando el .sample y hemos quitado los comentarios del signed off para que firme automáticamente si no hemos firmado nosotros.
+- Primera prueba exitosa:
+$ git last
+commit 7b2a4c63b892fc2e5d75934f42f9d65804e2ae90 (HEAD -> rama-remota-1)
+Author: plh5-ua <plh5@alu.ua.es>
+Date:   Thu Dec 26 16:20:31 2024 +0100
+
+    Prueba 2 del hook commit-msg, volvemos a intentar que añada la firma automáticamente
+    Signed-off-by: plh5-ua <plh5@alu.ua.es>
+
+Además hemos usado el alias local 'last' para sacar el último commit.
