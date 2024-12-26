@@ -396,7 +396,7 @@ char selectOption(){
 	return option;
 }
 
-
+// Esta es la función principal del programa
 int main(int argc,char *argv[]){
   if(argc!=2){ // Si los parámetros no son correctos, el programa termina inmediatamente
     cout << "Usage: " << argv[0] << " <seed>" << endl;
