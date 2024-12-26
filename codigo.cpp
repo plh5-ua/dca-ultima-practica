@@ -1,4 +1,5 @@
 // DNI 51775490Y, PABLO LECOCQ HERNANDIS
+// Texto irrelevante aqui
 
 #include <iostream>
 #include <cstdlib> // Para rand(), srand() y atoi()
@@ -97,6 +98,7 @@ void asignStats(Hero &hero){
 		getline(cin, defenseTotal);
 		def = stoi(defenseTotal);
 		
+		// La suma de ataque y defensa tiene que ser 100
 		if(att + def != 100 || (att <= 0) || (def <= 0)){
 			cout << "ERROR: wrong distribution" << endl;
 			stop = false;
@@ -365,7 +367,7 @@ void showMenu(){
        << "3- Special" << endl 
        << "4- Report" << endl
        << "q- Quit" << endl
-       << "Option: ";
+       << "Select Option: ";
 }
 
 char selectOption(){
@@ -395,10 +397,11 @@ char selectOption(){
 	return option;
 }
 
-
+// Esta es la función principal del programa
 int main(int argc,char *argv[]){
   if(argc!=2){ // Si los parámetros no son correctos, el programa termina inmediatamente
-    cout << "Usage: " << argv[0] << " <seed>" << endl;
+    cout << "Por favor aniade un parametro a la ejecucion, un int para la seed" << endl;
+	//cout << "Usage: " << argv[0] << " <seed>" << endl;
   }
   else{
     srand(atoi(argv[1])); // Introducimos la semilla para generar números aleatorios
